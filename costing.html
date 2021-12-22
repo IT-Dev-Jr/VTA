@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>:(</title>
+		<link rel="shortcut icon" href="../img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../css/404.css" media="screen"> 
+		<script type="text/javascript" src='js/jquery-2.1.3.min.js?v=2'></script>
+		<script type="text/javascript" src='js/jquery.countdown.min.js'></script>
+	</head>
+	<body>
+		<div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div> 
+		    <div class="countdown">
+			  Corriendo Costing :)<br>
+			  <span id="clock"></span>
+			</div><br>
+		    <span><a href="index.php">Regresar</a></span>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$('#clock').countdown('2021/12/06 07:00:00')
+			.on('update.countdown', function(event) {
+			  var format = '%H:%M:%S';
+			  if(event.offset.totalDays > 0) {
+			    format = '%-d day%!d ' + format;
+			  }
+			  if(event.offset.weeks > 0) {
+			    format = '%-w week%!w ' + format;
+			  }
+			  $(this).html(event.strftime(format));
+			})
+			.on('finish.countdown', function(event) {
+			  $(this).html('Costing corrio con exito.')
+			    .parent().addClass('disabled');
+			    window.location.replace("index.php");
+
+			});
+		</script>
+	</body>
+</html>
+
+
