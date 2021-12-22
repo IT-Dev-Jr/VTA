@@ -1,0 +1,370 @@
+.icons{ 
+	color: white;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-top: 60px;
+	height: 250px;
+	text-align: center;
+	width: 100%;
+}
+
+.icons img{
+	cursor: pointer;
+	height: 180px;
+	margin-bottom: 20px;
+	width: 180px;
+
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+	-moz-transition: all 1s ease; /* Firefox */
+	-o-transition: all 1s ease; /* IE 9 */
+	-ms-transition: all 1s ease; /* Opera */
+	transition: all 1s ease;
+}
+
+.icons img:hover{
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transform:scale(1.2);
+    z-index: 10;
+}
+
+.icons ul li { 
+    display:inline-block;
+}
+
+.icons ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+.icons li{
+	height: 220px;
+	width: 200px;
+}
+  
+/* HEADER */
+ 
+
+.queryInfo {
+	margin-top: 15px;
+	overflow: auto;
+	width: 90%;
+}
+
+.queryInfo table{ 
+	width: 100%;
+} 
+
+.block input[type="submit"]{
+  border:1px solid red;
+  color:red; 
+  cursor: pointer;
+  font-family:helvetica;
+  margin-top: 10px;
+  text-decoration:none;
+  height: 30px;
+  width: 150px;
+} 
+
+.woForm{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.woForm input{
+  height: 40px;
+  width: 180px;
+}
+
+#openreport{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#openreport input{
+  height: 40px;
+  width: 180px;
+} 
+
+.retakeButt{
+  color: white;
+  background: red;
+}
+
+#startNew select{
+  height: 45px;
+  width: 250px;
+}
+
+input#round{
+  background-color:#ff0000;
+  border:1px solid #ff0000; 
+  border-radius: 50px;
+  box-shadow: 2px 2px 15px rgba(0,0,0, .75);
+  color:#fff;
+  font-size:0.8em;
+  margin: 0 auto;
+  height:20px;
+  width:20px; 
+  -moz-box-shadow: 0 0 10px rgba(0,0,0, .75);
+  -moz-border-radius: 50px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0, .75);
+  -webkit-border-radius: 50px;
+}
+
+input#round:hover{
+  background:#c20b0b;
+  border:1px solid #c20b0b;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+  -moz-box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+  box-shadow: 0px 0px 5px rgba(0,0,0, .75);
+}
+
+.formdivs{
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+#basicUsage{
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+
+}   
+
+.getWoRep{
+  width: 100%;
+}
+
+.form-style-2{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px; 
+    margin: 0 auto;
+}
+.form-style-2-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+.form-style-2 label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > .spann{
+    width: 200px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+.form-style-2 label > .spanl{
+    width: 100%;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+}
+
+.form-style-2 span.required{
+    color:red;
+}
+.form-style-2 .tel-number-field{
+    width: 40px;
+    text-align: center;
+}
+.form-style-2 input.input-field{
+    width: 48%;
+    
+}
+
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+.form-style-2 .select-field{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+    border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+    height:100px;
+    width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}
+/***** FLOATING DIV *****/
+
+footer{
+  color: white;
+  font-size: 1.5em;
+  text-align: center; 
+  clear: both;
+  position: relative;
+  height: 3em;
+  margin-top: 4em;
+}
+
+.formdivs input[type=text],input[type=number],textarea,select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formdivs input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+.formdivs input[type=submit]:hover {
+    background-color: #45a049;
+} 
+
+
+.block label { 
+   display: inline-block; 
+   width: 80px; 
+   text-align: right;     
+   margin-top: 13px;
+   padding: 5px;
+   font-weight: bold;
+   font-size: 0.8em;
+}
+
+
+.floatTable{
+  padding: 0;
+}
+
+.floatTable td,th{
+  padding: 0;
+}
+
+.floatTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.floatTable td, .floatTable th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.floatTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.floatTable tr:hover {background-color: #ddd;}
+
+.floatTable th {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+  pointer-events: none;
+}
+
+#woFormGetff{ 
+  margin: 0 auto;
+  width: 34%; 
+  text-align: center;
+}
+
+#woFormGetff input[type="submit"]{
+  border:1px solid red;
+  color:red; 
+  cursor: pointer;
+  font-family:helvetica;
+  margin-top: 10px;
+  text-decoration:none;
+  height: 30px;
+  width: 150px;
+} 

@@ -1,0 +1,576 @@
+/***************************** FONTS *****************************/
+@font-face {
+    font-family: font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'codropsicons';
+  src:url('../fonts/codropsicons/codropsicons.eot');
+  src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+    url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+    url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***************************** FONTS *****************************/
+/************************* COMPLETE BODY *************************/
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html,body{
+  height: 100%;
+  min-width: 980px;
+  overflow: auto;
+}
+
+.wrapper{
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgb(0, 0, 0);
+  background-repeat:repeat;
+  display: none;
+  opacity: 0.7; /* Safari, Opera */
+  -moz-opacity:0.70; /* FireFox */
+  filter: alpha(opacity=70); /* IE */
+  height: 100%;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.overlay .loading{  
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 140px;
+  width: 240px; 
+}
+
+.overlay .loading h3{ 
+  font-size: 20px;
+  text-align: center;
+} 
+
+.overlay2 {
+  background-color: rgb(0, 0, 0);
+  background-repeat:repeat;
+  display: none;
+  opacity: 0.7; /* Safari, Opera */
+  -moz-opacity:0.70; /* FireFox */
+  filter: alpha(opacity=70); /* IE */
+  height: 100%;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+}
+
+.overlay2 .loading{  
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 140px;
+  width: 240px; 
+}
+
+.overlay2 .loading h3{ 
+  font-size: 20px;
+  text-align: center;
+} 
+/************************* COMPLETE BODY *************************/
+/***************************** HEADER ****************************/
+
+header{
+  background-color: #0086b3;
+  float: left;
+  height: 91%;
+  width: 20%;
+}
+
+header img{
+  margin: 0 auto;
+  height: 60px;
+  width: 200px;
+}
+
+header .logo{
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 200px;
+}
+
+/***** To Navigation Style *****/
+.codrops-top {
+  background-color: #404040;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.69em;
+  height: 3.8%;
+  line-height: 2.2;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.codrops-top a {
+  /*color: #7c8d87;*/
+  color: white;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+
+.codrops-top a:hover {
+  background: #102F50;
+}
+
+.codrops-top span.right {
+  float: right;
+}
+
+.codrops-top span.right a {
+  display: block;
+  float: left;
+}
+
+.codrops-icon:before {
+  font-family: 'codropsicons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  margin: 0 4px;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+  content: "\e001";
+}
+
+.codrops-icon-prev:before {
+  content: "\e004";
+}
+
+
+/******************************* NAV *****************************/
+
+nav{
+  color: white;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  padding-top: 110px;
+  min-width: 120px;
+  width: 100%;
+}
+
+nav ul,li{
+  text-align: center;
+}
+
+nav span{
+  padding: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a:link, a:visited {
+  color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+nav a:hover, a:active {
+    background-color: #004d66;
+}
+
+nav .selected {
+    background-color: #004d66;
+}
+
+/***************************** HEADER ****************************/
+
+/****************************** BODY *****************************/
+
+.main{
+  float: right;
+  height: 91%;
+  width: 73%;
+}
+
+.main h1{
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif; 
+  font-size: 30px;
+  padding: 5px 0px 0px 1px; 
+}
+
+.container{
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  height: 89%;
+  margin: 0 auto;
+  margin-top: 30px;
+  overflow: auto;
+}
+
+.container form{ 
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  width: 46em;
+} 
+
+.container label{
+  display: block;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  width: 18em;
+}
+
+.container input[type="text"]{
+  margin-bottom: 20px;
+  padding: 4px 6px;
+  width: 240px;
+}
+
+.container input[type="checkbox"]{ 
+  height: 25px;
+  width: 25px;
+}
+
+.container .submit input{
+  color: #fff;
+  background: #2E8DEF;
+  border: 1px solid white;
+  margin-left: 15em;
+    padding: 12px 90px;
+} 
+
+.container .file input{ 
+  border: 1px solid white;
+  margin-left: 6em;
+    padding: 12px 90px;
+}
+
+.container h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container table{
+  border: 0px solid #19BFE8;
+  border-collapse: collapse;
+  border-spacing: 0;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+}
+
+.container table.primary tr.adjust {
+    background:blue;
+    color:white;
+}
+
+.container th {
+    background: #2E5680; 
+    color: white;
+    cursor: pointer;font-size: 17px;
+    font-weight: 100;  
+    padding: 0.25rem;
+    text-align: center; 
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.container tr { 
+    font-size: 14px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+.container tr:nth-child(odd) {
+    background: #CEF2FF;
+}
+
+.container tr:hover td {
+  cursor: pointer;
+    background: #9DE6FF;
+    border-top: 1px solid #22262e;
+    border-bottom: 1px solid #22262e;
+}
+
+.container td {
+    border-right: 1px solid #C1C3D1; 
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 5px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}  
+/* FLAOTING DIVS */
+
+.floating {
+  background-color: #2E8DEF;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  outline-color: #373737;
+  display: none;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 140px;
+  width: 400px;
+  z-index: 10;
+}
+
+.floating h2{
+  font-size: 18px;
+}
+
+.floating form{
+  margin-top: 60px;
+  margin: 0 auto;
+  height: 100%;
+  width: 240px;
+}
+
+.floating input[type="text"]{
+  height: 40px;
+  width: 240px;
+}
+
+.floating ::-webkit-input-placeholder{
+  background-color: white;
+  color: black;
+}
+
+.floating .loading{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 240px;
+}
+
+/* HEADER */
+.floating header {
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+}  
+
+.back{
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 400px;
+}
+
+.back img{
+  cursor: pointer;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.back p{
+  color: white;
+  font-size: 24px;
+  padding-top: 3px;
+}
+
+/* END HEADER */ 
+/* END FLOATGING DIVS */
+/****************************** BODY *****************************/
+
+/***************************** FOOTER ****************************/
+
+footer{
+  background-color: #404040;
+  clear: both;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  height: 5.2%;
+  position: relative;
+  width: 20%;
+}
+
+footer img{
+  height: 20px;
+  margin: 0 auto;
+  margin-left: 85px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+footer p{
+  color: white;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 10px;
+} 
+
+/***************************** FOOTER ****************************/
+
+
+/***** FLOATING DIV *****/
+.ehsQuery {
+  background-color: #0086b3;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  outline-color: #373737;
+  display: none;
+  color: white;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  height: 620px;
+  width: 1100px;
+  z-index: 10;
+}
+
+/* HEADER */
+.ehsQuery header {
+  margin: 0 auto;
+  width: 100%;
+  height: 90px;
+}  
+
+.ehsQuery form{
+  margin: 0 auto; 
+  text-align: center; 
+  width: 100%;
+}
+
+.ehsQuery table{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.ehsQuery td{
+  text-align: center; 
+  padding: 5px;
+}
+
+.ehsQuery th{
+  text-align: center; 
+  padding: 10px;
+  font-size: 22px;
+}
+
+.ehsQuery label{
+  font-size: 20px;
+  width: 60px;
+}
+
+.ehsQuery input[type="text"]{
+  font-family: metro; 
+  text-align: center;
+  margin-top: 10px;
+  height: 25px;
+  width: 180px;
+} 
+
+.ehsQuery input[type="checkbox"]{ 
+  height: 22px;
+  width: 22px;
+} 
+
+.ehsQuery input[type="date"]{
+  font-family: metro;
+  float:right;
+  text-align: center;
+  height: 25px;
+  width: 140px;
+} 
+
+.ehsQuery input[type="submit"]{
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 40px;  
+  width: 180px;
+}
+
+.ehsQuery input[type="submit"]:hover{
+  background-color: #82BBF5;
+} 
+
+.ehsQuery input[type="button"]{
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  cursor: pointer;
+  height: 40px; 
+  margin-top: 30px;
+  width: 180px;
+}
+
+.ehsQuery input[type="button"]:hover{
+  background-color: #82BBF5;
+}
+
+#tableQi{  
+  height: 80%;
+  width: 100%;
+} 
+
+#tableQi th{
+  background: #404040;
+  font-size: 0.9em;
+}
+
+#tableQi tr{
+  background: white; 
+  border: 2px solid white;
+}
+
+#tableQi td{
+  font-size: 0.8em;
+  color: #000; 
+}
+
+#tableQi tr:nth-child(even) {
+    background-color: #d9d9d9;
+}

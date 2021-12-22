@@ -1,0 +1,538 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto);*/
+@font-face {
+  font-family: metro;
+  src: url(../fonts/metro.woff);
+}
+/* ------------------------ CSS RESET START -----------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ------------------------ END CSS RESET ------------------------------ */
+/* ---------------------------- HEADER ------------------------------ */
+body {
+  background-color: #2E8DEF;
+  font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  margin: auto;
+  min-height:100%;
+  min-width:1360px;
+  position:relative;
+}
+
+header {
+  margin: 0px 0px 0px 0px;
+  min-width: 1090px;
+  height: 120px;
+}
+
+.back{
+	float: left;
+	height: 60px;
+	padding-top: 60px;
+	padding-left: 85px;
+	min-width: 300px;
+}
+
+.back img{
+	float: left;
+	height: 60px;
+	margin-right: 20px;
+	width: 60px;
+}
+
+.back p{
+	color: white;
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 36px;
+	padding-top: 10px;
+}
+
+/*.form_lines{
+	float: right;
+	height: 60px;
+	padding-top: 80px;
+	padding-right: 20px;
+	width: 660px;
+}
+
+.form_lines select{
+	float: left;
+	margin-right: 20px;
+}
+
+#line_sel,#dep_sel{
+	width: 300px;
+}*/
+
+.form_lines{
+	color: white;
+	float: right;
+	height: 60px;
+	padding-top: 70px;
+	padding-right: 85px;
+	width: 380px;
+}
+
+.form_lines label{ 
+	display: inline-block; 
+	text-align: right; 
+	width: 70px; 
+}​
+
+.form_lines input{
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	height: 25px;
+}
+
+.form_lines select{
+	height: 32px;
+	margin-left: 35px;
+	width: 315px;/*width: 140px;*/
+}
+
+.form_lines label{
+	margin: 0 auto;
+	padding: 8px;
+}
+
+.form_lines input[type="submit"]{
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	padding: 8px 15px;
+	margin-left: 35px;
+	width: 315px;
+}
+
+.form_lines input[type="submit"]:hover {
+    background-color: #174678;
+}
+.form_lines ::-webkit-input-placeholder {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form_lines :-ms-input-placeholder {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form_lines :-moz-placeholder {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form_lines ::-moz-placeholder {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#loading{
+	display:none;
+}
+
+.jpgraph{
+	color: white;
+	float: left;
+	margin-left: 0px; 
+	padding-top: 40px;
+	width: 500px;
+	z-index: 5;
+}
+
+.jpgraph table{
+	border: 1px solid white;
+	text-align: center;
+	width: 500px;
+}
+
+.jpgraph th{
+	border: 1px solid white;
+	font-weight: bold;
+	padding: 4px;
+}
+
+.jpgraph td{
+	padding: 4px;
+}
+
+.jpgraph a{
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*******************************
+
+	BODY
+
+*******************************/
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.main{
+	color: white;
+	margin: 0 auto;
+	margin-top: 100px;
+	min-width: 1100px;
+	position: relative;
+	width: 90%;
+}
+
+.main .encabezado{
+	font-size: 30px;
+}
+
+.main a{
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.box1{ 
+	float: left;
+	height: 40%;  
+	width: 48%;
+}
+
+.box1 table{
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+} 
+
+.box1 th{
+	font-weight: bold;
+
+}
+
+.box1 td{
+	padding: 2px;	
+}
+
+.box2{ 
+	float: left;
+	min-height: 300px;
+	width: 48%;
+}
+
+.table{
+    display:table;
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+    /*white-space: nowrap;*/
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+.tr{
+	font-size: 23px;
+	display:table-row;
+	text-align: center;
+}
+
+.left{
+	display:table;
+	float: left;
+	text-align: left;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	margin-left: 50px;
+	min-width: 500px;
+}
+
+.left-tr{
+	font-size: 18px;
+	display:table-row;
+	text-align: left;
+}
+
+.head{
+	font-size: 28px;
+}
+
+.right{
+	float: right;
+	text-align: right;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	margin-right: 50px;
+	min-width: 400px;
+}
+
+#loading{
+	float: right;
+	width: 300px;
+}
+
+#loading p{
+	color: white;
+	float: left;
+}
+
+#loading img{
+	float: right;
+}
+
+.table{
+    display:table;
+    margin: 0 auto;
+    text-align: center;
+    width: 85%;
+}
+
+.tr{
+	font-size: 23px;
+	display:table-row;
+	text-align: center;
+}
+
+.main form{
+	display:table-row;
+	margin: 0 auto;
+	min-width: 720px;
+	width: 100%;
+}
+
+.main input[type="text"]{
+	display:table-cell;
+	height: 25px;
+	width: 170px;
+}
+
+.lines:hover {
+    background-color: #174678;
+}
+
+.red{
+	background-color:red;
+}
+
+.green{
+	background-color:green;
+}
+
+.main select{
+	display:table-cell;
+	height: 32px;
+	width: 140px;
+}
+
+.main label{
+	display:table-cell;
+	margin: 0 auto;
+	padding: 8px;
+}
+
+.main input[type="submit"]{
+	display:table-cell;
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	cursor: pointer;
+	padding: 8px 15px;
+}
+
+/* ------------------------ END HEADER ------------------------------ */
+.tooltip {
+	cursor: pointer;
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
+.tooltip p{
+	cursor: pointer;
+}
+
+
+/*********************** FLOATING DIV ****************************/
+	
+.infowo {
+	background-color: #2E8DEF;
+	display: none;
+	color: white;
+    position: absolute;
+	margin: 0 auto;
+	left: 18%;
+	top: 120px;
+	height: 600px;
+	overflow: auto;
+	width: 850px;
+	z-index: 10;
+}
+
+.infowo h1{
+	border-radius: 2px;
+	font-size: 24px;
+	text-align: center;
+	padding: 30px;
+}
+
+.infowo h2{
+	border-radius: 2px;
+	font-size: 20px;
+	text-align: center;
+	padding: 4px;
+}
+
+.infowo .acom{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.infowo .acom p{
+	display:table-row;;
+}
+
+.infowo .acom span{
+	display: table-cell;
+	padding: 15px;
+}
+
+.infowo img{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.overlay {
+	background-color: rgb(0, 0, 0);
+	background-repeat:repeat;
+	display: none;
+	opacity: 0.7; /* Safari, Opera */
+	-moz-opacity:0.70; /* FireFox */
+	filter: alpha(opacity=70); /* IE */
+	height: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 5;
+}
+
+/*********************** FLOATING DATE **************************/
+	
+.datesel {
+	background-color: #2E8DEF;
+	display: none;
+	color: white;
+    position: absolute;
+	margin: 0 auto;
+	left: 35%;
+	height: 370px;
+	width: 400px;
+	z-index: 10;
+}
+
+.datesel h1{
+	border-radius: 2px;
+	font-size: 24px;
+	text-align: center;
+	padding: 30px;
+}
+
+.datesel h2{
+	border-radius: 2px;
+	font-size: 20px;
+	text-align: center;
+	padding: 4px;
+}
+
+.datesel .acom{
+	display: table;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.datesel .acom p{
+	display:table-row;;
+}
+
+.datesel .acom span{
+	display: table-cell;
+	padding: 15px;
+}
+
+.datesel form{
+	margin: 0 auto;
+	width: 260px;
+}
+
+.datesel input[type="date"]{
+	width: 250px;
+}
+
+.datesel textarea{
+	text-align: center;
+	height: 100px;
+	margin-top: 30px;
+	width: 250px;
+}
+
+.datesel input[type="submit"]{
+	display:table-cell;
+	background: transparent;
+	border: 1px solid white;
+	margin-top: 30px;
+	color: white;
+	cursor: pointer;
+	padding: 8px 15px;
+	width: 250px;
+}
+
+.masterTooltip{
+	cursor: pointer;
+}
